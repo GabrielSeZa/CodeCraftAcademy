@@ -1,0 +1,497 @@
+
+/* Estilos generales de CodeCraft Academy */
+
+body {
+    background-color: #f4f7fb;
+    color: #243247;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Encabezado principal */
+header {
+    background-color: #142d4e;
+    padding: 20px;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Enlaces del menú */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Efecto al pasar el cursor */
+nav a:hover {
+    color: #62d6e8;
+}
+
+/* Indicador de navegación con teclado */
+nav a:focus-visible {
+    outline: 3px solid #62d6e8;
+    outline-offset: 5px;
+    border-radius: 3px;
+}
+
+
+
+/* Sección de bienvenida */
+#inicio {
+    background: linear-gradient(135deg, #142d4e, #245b83);
+    color: #ffffff;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+/* Contenedor de bienvenida */
+.bienvenida {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Título principal */
+.bienvenida h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+/* Frase de la academia */
+.bienvenida p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+/* Botón para explorar cursos */
+.boton-principal {
+    display: inline-block;
+    background-color: #62d6e8;
+    color: #10263e;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto al pasar el cursor */
+.boton-principal:hover {
+    background-color: #ffffff;
+}
+
+/* Accesibilidad mediante teclado */
+.boton-principal:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 4px;
+}
+
+
+
+/* Sección de cursos */
+#cursos {
+    padding: 60px 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#cursos h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#cursos > p {
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+/* Organización de las tarjetas */
+.contenedor-cursos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* Diseño de cada tarjeta */
+.contenedor-cursos article {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border-top: 4px solid #39b8d0;
+    box-shadow: 0 5px 18px rgba(20, 45, 78, 0.08);
+}
+
+.contenedor-cursos h3 {
+    color: #142d4e;
+    margin-top: 0;
+}
+
+.contenedor-cursos p {
+    line-height: 1.7;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 650px) {
+    .contenedor-cursos {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* Sección de beneficios */
+#beneficios {
+    background-color: #e7f0f7;
+    padding: 65px 24px;
+    text-align: center;
+}
+
+#beneficios h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#beneficios > p {
+    max-width: 750px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+}
+
+/* Tarjetas de beneficios */
+#beneficios article {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 240px;
+    max-width: 100%;
+    min-height: 190px;
+    margin: 10px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border-bottom: 4px solid #39b8d0;
+    box-shadow: 0 4px 15px rgba(20, 45, 78, 0.07);
+}
+
+#beneficios article h3 {
+    color: #142d4e;
+    margin-top: 0;
+}
+
+#beneficios article p {
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+
+
+/* Sección sobre nosotros */
+#nosotros {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 24px;
+}
+
+#nosotros h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+#nosotros > p {
+    text-align: center;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+/* Títulos de misión y visión */
+#nosotros h3 {
+    color: #142d4e;
+    font-size: 1.4rem;
+    border-left: 5px solid #39b8d0;
+    padding-left: 15px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+/* Descripciones */
+#nosotros h3 + p {
+    line-height: 1.8;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+/* Sección de contacto */
+#contacto {
+    background-color: #e7f0f7;
+    padding: 70px 24px;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#contacto > p {
+    max-width: 700px;
+    margin: 0 auto 35px;
+    line-height: 1.7;
+}
+
+/* Formulario de contacto */
+#formulario-contacto {
+    background-color: #ffffff;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(20, 45, 78, 0.1);
+    text-align: left;
+    box-sizing: border-box;
+}
+
+/* Etiquetas del formulario */
+#formulario-contacto label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #142d4e;
+}
+
+/* Campos del formulario */
+#formulario-contacto input,
+#formulario-contacto select,
+#formulario-contacto textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #a9bacb;
+    border-radius: 7px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Resaltado al seleccionar un campo */
+#formulario-contacto input:focus-visible,
+#formulario-contacto select:focus-visible,
+#formulario-contacto textarea:focus-visible {
+    outline: 3px solid #39b8d0;
+    outline-offset: 2px;
+}
+
+/* Botón de envío */
+#formulario-contacto button {
+    background-color: #142d4e;
+    color: #ffffff;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Efecto al pasar el cursor */
+#formulario-contacto button:hover {
+    background-color: #24577a;
+}
+
+/* Accesibilidad del botón */
+#formulario-contacto button:focus-visible {
+    outline: 3px solid #39b8d0;
+    outline-offset: 3px;
+}
+
+/* Mensaje del formulario */
+#mensaje-formulario {
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+
+
+/* Filtro de cursos */
+.filtro-cursos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+/* Texto del filtro */
+.filtro-cursos label {
+    font-weight: bold;
+    color: #142d4e;
+}
+
+/* Selector de tecnologías */
+.filtro-cursos select {
+    padding: 12px 18px;
+    border: 2px solid #39b8d0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #142d4e;
+    font-size: 1rem;
+    cursor: pointer;
+    min-width: 200px;
+    max-width: 100%;
+}
+
+/* Accesibilidad mediante teclado */
+.filtro-cursos select:focus-visible {
+    outline: 3px solid #142d4e;
+    outline-offset: 3px;
+}
+
+/* Ocultar los cursos que no coincidan con el filtro */
+.contenedor-cursos article[hidden] {
+    display: none;
+}
+
+/* Adaptación para tabletas y celulares */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    .bienvenida {
+        padding: 70px 20px;
+    }
+
+    .bienvenida h1 {
+        font-size: 2rem;
+    }
+
+    #cursos,
+    #beneficios,
+    #nosotros,
+    #contacto {
+        padding: 50px 20px;
+    }
+
+    .contenedor-cursos {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-beneficios {
+        grid-template-columns: 1fr;
+    }
+
+    #formulario-contacto {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .filtro-cursos {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+/* Botón de navegación móvil */
+
+.boton-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Menú para celulares */
+
+@media (max-width: 768px) {
+
+    .boton-menu {
+        display: block;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    nav ul.menu-activo {
+        display: flex;
+    }
+}
+
+
+
+/* Pie de página de CodeCraft Academy */
+
+footer {
+    background-color: #142d4e;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+footer p:last-child {
+    color: #62d6e8;
+    font-size: 0.95rem;
+}
+
+
+
+/* Imágenes de los cursos */
+.imagen-curso {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    height: 180px;
+    object-fit: contain;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+}
+
+

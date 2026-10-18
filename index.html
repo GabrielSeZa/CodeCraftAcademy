@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft Academy</title>
+    
+<link rel="stylesheet" href="styles.css">
+
+    
+</head>
+
+<body>
+
+    
+<!-- Encabezado de la página -->
+
+<header>
+    <nav aria-label="Navegación principal">
+
+        <!-- Botón del menú para celulares -->
+        <button
+            class="boton-menu"
+            id="boton-menu"
+            type="button"
+            aria-label="Abrir menú de navegación"
+            aria-expanded="false"
+            aria-controls="menu-navegacion">
+            ☰
+        </button>
+
+        <!-- Enlaces de navegación -->
+        <ul id="menu-navegacion">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+<!-- Contenido principal -->
+<main>
+
+    
+<!-- Sección de inicio -->
+<section id="inicio">
+    <div class="bienvenida">
+        <h1>Bienvenidos a CodeCraft Academy</h1>
+
+        <p>Transforma tus ideas en código y tus conocimientos en oportunidades.</p>
+
+        <a href="#cursos" class="boton-principal">Explorar cursos</a>
+    </div>
+</section>
+
+
+    
+<!-- Sección de cursos -->
+<section id="cursos">
+    <h2>Explora nuestros cursos</h2>
+
+    <p>Descubre las herramientas que te ayudarán a desarrollar tus habilidades de programación.</p>
+
+    
+<div class="filtro-cursos">
+    <label for="filtro-curso">Filtrar cursos por tecnología:</label>
+
+    <select id="filtro-curso">
+        <option value="todos">Todos los cursos</option>
+        <option value="html">HTML5</option>
+        <option value="css">CSS3</option>
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+    </select>
+</div>
+
+
+<div class="contenedor-cursos">
+
+
+    
+<article data-curso="html">
+    <img src="img/html5.jpg"
+         alt="Ilustración tecnológica sobre HTML5"
+         class="imagen-curso">
+
+    <h3>HTML5 desde cero</h3>
+    <p>Aprende a crear la estructura de páginas web utilizando HTML5.</p>
+</article>
+
+
+        
+<article data-curso="css">
+    <img src="img/css3.jpg"
+         alt="Ilustración tecnológica sobre diseño web con CSS3"
+         class="imagen-curso">
+
+    <h3>Diseño web con CSS3</h3>
+    <p>Aprende a diseñar sitios web modernos y adaptables a diferentes dispositivos.</p>
+</article>
+
+<article data-curso="javascript">
+    <img src="img/javascript.jpg"
+         alt="Ilustración tecnológica sobre programación con JavaScript"
+         class="imagen-curso">
+
+    <h3>JavaScript interactivo</h3>
+    <p>Desarrolla páginas web dinámicas utilizando JavaScript.</p>
+</article>
+
+<article data-curso="python">
+    <img src="img/python.jpg"
+         alt="Ilustración tecnológica sobre programación con Python"
+         class="imagen-curso">
+
+    <h3>Fundamentos de Python</h3>
+    <p>Conoce los principios de la programación mediante el lenguaje Python.</p>
+</article>
+
+</div>
+
+</section>
+
+
+<!-- Sección de beneficios -->
+<section id="beneficios">
+    <h2>¿Por qué estudiar con nosotros?</h2>
+
+    <p>En CodeCraft Academy queremos que aprender programación sea una experiencia accesible, práctica y flexible.</p>
+
+    <article>
+        <h3>Aprendizaje desde cero</h3>
+        <p>Nuestros cursos están diseñados para personas que desean comenzar a programar sin conocimientos previos.</p>
+    </article>
+
+    <article>
+        <h3>Horarios flexibles</h3>
+        <p>Estudia a tu propio ritmo y organiza tu aprendizaje de acuerdo con tu disponibilidad.</p>
+    </article>
+
+    <article>
+        <h3>Proyectos prácticos</h3>
+        <p>Aplica tus conocimientos mediante ejercicios y proyectos relacionados con situaciones reales.</p>
+    </article>
+
+    <article>
+        <h3>Contenido actualizado</h3>
+        <p>Aprende utilizando herramientas y tecnologías empleadas actualmente en el desarrollo de software.</p>
+    </article>
+
+</section>
+
+
+<!-- Sección sobre nosotros -->
+<section id="nosotros">
+    <h2>Conoce CodeCraft Academy</h2>
+
+    <p>CodeCraft Academy es una iniciativa educativa enfocada en facilitar el aprendizaje de programación y desarrollo web a personas interesadas en el mundo de la tecnología.</p>
+
+    <h3>Nuestra misión</h3>
+    <p>Proporcionar una formación accesible y práctica que permita a los estudiantes desarrollar habilidades tecnológicas y fortalecer su pensamiento lógico.</p>
+
+    <h3>Nuestra visión</h3>
+    <p>Ser una plataforma educativa reconocida por impulsar el aprendizaje de programación y fomentar la creatividad, la innovación y el desarrollo profesional.</p>
+
+</section>
+
+
+<!-- Sección de contacto -->
+<section id="contacto">
+    <h2>Contáctanos</h2>
+
+    <p>¿Te interesa aprender programación? Completa el siguiente formulario y conoce nuestras opciones de formación.</p>
+
+    <form id="formulario-contacto">
+
+        <div>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div>
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+        </div>
+
+        <div>
+            <label for="curso">Curso de interés:</label>
+            <select id="curso" name="curso" required>
+                <option value="">Selecciona un curso</option>
+                <option value="html">HTML5 desde cero</option>
+                <option value="css">Diseño web con CSS3</option>
+                <option value="javascript">JavaScript interactivo</option>
+                <option value="python">Fundamentos de Python</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">Enviar solicitud</button>
+
+        <p id="mensaje-formulario" role="status" aria-live="polite"></p>
+
+    </form>
+</section>
+
+
+
+</main>
+
+
+<!-- Pie de página -->
+<footer>
+    <p>&copy; 2026 CodeCraft Academy. Todos los derechos reservados.</p>
+
+    <p>Aprende, crea y desarrolla tus habilidades en programación.</p>
+</footer>
+
+
+<script src="script.js" defer></script>
+
+
+</body>
+
+</html>
